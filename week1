@@ -1,0 +1,13 @@
+import numpy as np
+
+arr1 = np.arange(1, 7).reshape(3, 2)
+arr2 = np.arange(13, 19).reshape(3, 2)
+arr3 = np.append(arr1, arr2, axis = 0)
+print(arr3)
+
+arr1 = np.arange(1,25).reshape(6,4)
+arr3 = np.arange(1,25).reshape(3,8)
+for i in np.arange(3):
+  arr2 = np.append(arr1[i],arr1[i+3],axis=0)
+  arr3[i] = arr2  
+print(arr3)
